@@ -1,0 +1,31 @@
+# Конфигурация синхронизации с GitHub
+# Один паттерн на строку
+
+# Включаем файлы (поддерживает glob паттерны)
+INCLUDE:
+*
+
+# Исключаемые паттерны (более приоритетные)
+EXCLUDE:
+*private*
+*secret*
+*password*
+*key*
+*config*
+temp/*
+cache/*
+.env
+*.log
+__pycache__/*
+.git/*
+gsdfsdg.txt
+
+# Исключаемые папки целиком
+EXCLUDE_DIRS:
+secrets
+temp
+cache
+.git
+__pycache__
+node_modules
+private
